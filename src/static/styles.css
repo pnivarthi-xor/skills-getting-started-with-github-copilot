@@ -91,6 +91,7 @@ section h3 {
 .participants-list {
   list-style: none;
   margin-left: 0;
+  padding-left: 0;
 }
 
 .participants-list li {
@@ -100,6 +101,23 @@ section h3 {
   color: #555;
 }
 
+.participants-list li:before {
+  content: none;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #ff1744;
+}
 .participants-list li:before {
   content: "•";
   position: absolute;
